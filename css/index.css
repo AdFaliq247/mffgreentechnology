@@ -220,9 +220,14 @@
     }
 }
 
+/* Mobile Layout */
 @media (max-width: 600px){
     .section1{
         height: 400px;
+    }
+
+    .s1-content h1{
+        font-size: clamp(2rem, 2vw, 1.5rem);
     }
 
     .section2{
