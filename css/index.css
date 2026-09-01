@@ -223,7 +223,7 @@
 /* Mobile Layout */
 @media (max-width: 600px){
     .section1{
-        height: 200px;
+        height: 400px;
     }
 
     .s1-content h1{
@@ -231,7 +231,7 @@
     }
 
     .section2{
-        height: 200px;
+        height: 400px;
     }
 
     .s2-content h1{
