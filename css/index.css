@@ -135,10 +135,10 @@
 
 .s2-content h1 {
     font-family: 'Omegle', sans-serif;
-    font-size: clamp(5rem, 10vw, 8rem);
-    margin-bottom: 0;
+    font-size: clamp(4rem, 6vw, 8rem);
+    margin-bottom: 10px;
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .s2-content p {
@@ -150,16 +150,86 @@
     max-width: 800px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .content-video h1 {
-        font-size: 2rem;
+/* iPad — desktop layout, scaled to tablet viewport */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .s1-content,
+    .s2-content {
+        padding: 0 48px;
     }
-    .content-video p {
-        font-size: 1rem;
+}
+
+/* iPad portrait */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+    .section1,
+    .section2 {
+        height: 52vh;
+        min-height: 480px;
     }
-    .learnbtn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
+
+    .s1-content h1 {
+        font-size: clamp(1.75rem, 4.2vw, 2.75rem);
+    }
+
+    .s1-content p,
+    .s2-content p {
+        font-size: clamp(1rem, 2.2vw, 1.35rem);
+        max-width: 640px;
+    }
+
+    .s2-content h1 {
+        font-size: clamp(3.5rem, 8vw, 6rem);
+    }
+}
+
+/* iPad landscape */
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: landscape) {
+    .section1,
+    .section2 {
+        height: 70vh;
+        min-height: 420px;
+        max-height: 640px;
+    }
+
+    .s1-content h1 {
+        font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+        margin-bottom: 14px;
+    }
+
+    .s1-content p,
+    .s2-content p {
+        font-size: clamp(0.95rem, 1.8vw, 1.3rem);
+        margin-bottom: 22px;
+    }
+
+    .s2-content h1 {
+        font-size: clamp(3.25rem, 6vw, 5.5rem);
+    }
+}
+
+/* iPad Pro / Air landscape */
+@media (min-width: 1025px) and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
+    .section1,
+    .section2 {
+        height: 68vh;
+        max-height: 720px;
+    }
+
+    .s1-content,
+    .s2-content {
+        padding: 0 64px;
+    }
+}
+
+@media (max-width: 600px){
+    .section1{
+        height: 400px;
+    }
+
+    .section2{
+        height: 400px;
+    }
+
+    .s2-content h1{
+        font-size: clamp(3rem, 4vw, 2rem);
     }
 }
