@@ -227,7 +227,7 @@
     }
 
     .s1-content h1{
-        font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+        font-size: clamp(1.25rem, 4vw, 1.5rem);
     }
 
     .section2{
