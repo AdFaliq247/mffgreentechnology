@@ -1,5 +1,4 @@
-/* CSS for Site General Structured */
-
+/* CSS for Top Navigation and Footer */
 body{
     margin: 0;
     font-family: 'JetBrains Mono', monospace;
@@ -17,7 +16,7 @@ body.menu-open {
     background-color: white;
     padding: 10px 12px;
     border-bottom: 2px solid black;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
     position: relative;
 }
@@ -169,7 +168,7 @@ body.menu-open {
 
     .logo{
         margin-left: 0;
-        height: 120px;
+        height: 140px;
     }
 
     .hamburger {
@@ -229,4 +228,123 @@ body.menu-open {
         width: auto;
         font-size: 1.25rem;
     }
+}
+
+/* Footer Section */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    color: #333;
+    padding: 40px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    box-sizing: border-box;
+    border-top: 2px solid black;
+}
+
+/* Logo with Tagline */
+.footer-top{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Logo with Tagline */
+.footer-top img{
+    height: 100px;
+}
+
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-left, .footer-right{
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+.update-info{
+    text-align: right;
+}
+
+.footer-left a, .footer-right a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-right{
+    text-align: center;
+}
+
+.social-icons img{
+    width: 40px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover{
+    transform: scale(1.1);
+}
+
+.sdg-logo, .sdg-goal{
+    height: 60px;
+}
+
+.subscribe-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.subscribe-form input, .subscribe-form button{
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.subscribe-form input{
+    max-width: 600px;
+}
+
+.subscribe-form button{
+    background: #00c853;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    max-width: 100px;
+}
+
+.footer-bottom{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom a{
+    margin: 0 10px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover{
+    color: black;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
